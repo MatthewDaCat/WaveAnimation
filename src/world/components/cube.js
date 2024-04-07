@@ -28,7 +28,7 @@ function createCube() {
 
   cube.rotation.set(-0.5, -0.1, 0.8);
 
-  cube.tick = () => {
+  cube.tick = (delta) => {
     // increase the cube's rotation each frame
     cube.rotation.z += radiansPerSecond * delta;
     cube.rotation.x += radiansPerSecond * delta;
